@@ -10,12 +10,33 @@ public class City implements Comparable<City>{
         this.city = city;
         this.province = province;
     }
+
+    /**
+     * Getter for city name
+     * @return
+     * This City's name attribute
+     */
     String getCityName() {
         return this.city;
     }
+
+    /**
+     * Getter for province name
+     * @return
+     * This City's province attribute
+     */
     String getProvinceName(){
         return this.province;
     }
+
+    /**
+     * Allows for the comparison of two cities through their names
+     * @param o
+     * City to compare to
+     * @return
+     * Returns 0 if cities are equal; value less than zero if this city is less than the argument
+     * city; value greater than zero if this city is more than the argument city
+     */
     @Override
     public int compareTo(City o) {
         City city = (City) o;
